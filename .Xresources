@@ -1,0 +1,43 @@
+URxvt*depth:32
+URxvt*background: rgba:0000/0000/0550/2500
+URxvt*shading: 85
+URxvt*tintColor: #101332
+URxvt*scrollBar: false
+URxvt*font: xft:SourceCodePro-SemiBold:size=10
+
+! special
+*.foreground:   #19417f
+*.background:   #101332
+*.cursorColor:  #88a0cb
+
+! black
+*.color0:       #000000
+*.color8:       #19417f
+
+! red
+*.color1:       #88a0cb
+*.color9:       #19417f
+
+! green
+*.color2:       #88a0cb
+*.color10:      #19417f
+
+! yellow
+*.color3:       #19417f
+*.color11:      #000000
+
+! blue
+*.color4:       #19417f
+*.color12:      #19417f
+
+! magenta
+*.color5:       #000000
+*.color13:      #000000
+
+! cyan
+*.color6:       #000000
+*.color14:      #19417f
+
+! white
+*.color7:       #19417f
+*.color15:      #88a0cb
