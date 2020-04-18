@@ -10,15 +10,17 @@ programs to install:
 
 -feh
 
--i3-gaps wm (with rxvt-unicode)
-
 -ranger
 
 -vim
 
 -vlc
 
+-lolcat
 
+-cmatrix
+
+-neofetch
 
 programs to remove:
 
