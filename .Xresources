@@ -1,43 +1,45 @@
 URxvt*depth:32
-URxvt*background: rgba:0000/0000/0550/2500
+URxvt*background: rgba:0000/0000/0000/2500
 URxvt*shading: 85
-URxvt*tintColor: #101332
 URxvt*scrollBar: false
 URxvt*font: xft:SourceCodePro-SemiBold:size=10
+URxvt.internalBorder: 10
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
 
 ! special
-*.foreground:   #19417f
-*.background:   #101332
-*.cursorColor:  #88a0cb
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
 
 ! black
-*.color0:       #19417f
-*.color8:       #19417f
+*.color0:       #190f17
+*.color8:       #ffffff
 
 ! red
-*.color1:       #88a0cb
-*.color9:       #19417f
+*.color1:       #463e45
+*.color9:       #ffffff
 
 ! green
-*.color2:       #88a0cb
-*.color10:      #19417f
+*.color2:       #190f17
+*.color10:      #ffffff
 
 ! yellow
-*.color3:       #19417f
-*.color11:      #19417f
+*.color3:       #ffffff
+*.color11:      #463e45
 
 ! blue
-*.color4:       #19417f
-*.color12:      #19417f
+*.color4:       #190f17
+*.color12:      #ffffff
 
 ! magenta
-*.color5:       #19417f
-*.color13:      #19417f
+*.color5:       #463e45
+*.color13:      #463e45
 
 ! cyan
-*.color6:       #19417f
-*.color14:      #19417f
+*.color6:       #190f17
+*.color14:      #ffffff
 
 ! white
-*.color7:       #19417f
-*.color15:      #88a0cb
+*.color7:       #ffffff
+*.color15:      #ffffff
