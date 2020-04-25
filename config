@@ -185,12 +185,12 @@ client.urgent           $darkPurple         $darkPurple        $ligtPurple      
 # finds out, if available)
 bar {
 	colors {
-		background $dark-blue
-	    	separator #757575
+		background $darkPurple
+	    	separator #FFFFFF
 		#                  border                background              text
-		focused_workspace  $dark-blue            $dark-blue             $light-blue
-		inactive_workspace $dark-blue            $dark-blue             $middle-blue
-		urgent_workspace   $accent-color         $accent-color          $light-blue
+		focused_workspace  $lightPurple          $darkPurple             $lightPurple
+		inactive_workspace $lightPurple          $darkPurple             $lightPurple
+		urgent_workspace   $lightPurple          $darkPurple             $lightPurple
 	}
 
 }
