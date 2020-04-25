@@ -169,17 +169,16 @@ gaps outer 0
 #smart_gaps on
 #smart_borders on
 
-set $middle-blue         #19417f
-set $light-blue          #88a0cb
-set $dark-blue           #101332
-set $accent-colo   r     #dd8891
+set $white       #FFFFFF
+set $lightPurple #463e45
+set $darkPurple  #190F17
 
 # window colors
 #                       border              background         text                  indicator
-client.focused          $middle-blue        $middle-blue       $light-blue           #2d5695
-client.unfocused        $middle-blue        $middle-blue       $dark-blue            #2d5695
-client.focused_inactive $middle-blue        $middle-blue       $dark-blue            #2d5695
-client.urgent           $accent-color       $accent-color      $light-blue           #2d5695
+client.focused          $darkPurple         $darkPurple        $white                #FFFFFF
+client.unfocused        $darkPurple         $darkPurple        $white                #FFFFFF
+client.focused_inactive $darkPurple         $darkPurple        $lightPurple          #FFFFFF
+client.urgent           $darkPurple         $darkPurple        $ligtPurple           #FFFFFF
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
