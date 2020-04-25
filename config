@@ -195,7 +195,7 @@ bar {
 
 }
 
-exec_always feh --bg-scale /home/route/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/route/Pictures/wallpaper.jpg
 exec_always xset s 0 0 &
 exec_always xset -dpms; xset s off
 exec --no-startup-id compton &
