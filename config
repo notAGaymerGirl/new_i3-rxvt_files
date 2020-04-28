@@ -133,9 +133,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -163,6 +160,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+shift+x exec i3lock
+
+bindsym $mod+shift+u exec /home/lmroute/Documents/unityFiles/UnityHub.AppImage
+
+bindsym $mod+b exec firefox
+
 for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 0
@@ -170,32 +173,32 @@ gaps outer 0
 #smart_borders on
 
 set $white       #FFFFFF
-set $lightPurple #463e45
-set $darkPurple  #190F17
+set $mediumGrey  #222D31
+set $lightGrey   #d8d8d8
 
 # window colors
 #                       border              background         text                  indicator
-client.focused          $darkPurple         $darkPurple        $white                #FFFFFF
-client.unfocused        $darkPurple         $darkPurple        $white                #FFFFFF
-client.focused_inactive $darkPurple         $darkPurple        $lightPurple          #FFFFFF
-client.urgent           $darkPurple         $darkPurple        $ligtPurple           #FFFFFF
+client.focused          $mediumGrey         $mediumGrey        $white                #222D31
+client.unfocused        $mediumGrey         $mediumGrey        $white                #222D31
+client.focused_inactive $mediumGrey         $mediumGrey        $lightGrey            #222D31
+client.urgent           $mediumGrey         $mediumGrey        $lightGrey            #222D31
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
 	colors {
-		background $darkPurple
+		background $mediumGrey
 	    	separator #FFFFFF
 		#                  border                background              text
-		focused_workspace  $lightPurple          $darkPurple             $lightPurple
-		inactive_workspace $lightPurple          $darkPurple             $lightPurple
-		urgent_workspace   $lightPurple          $darkPurple             $lightPurple
+		focused_workspace  $lightGrey            $mediumGrey             $lightGrey
+		inactive_workspace $lightGrey            $mediumGrey             $lightGrey
+		urgent_workspace   $lightGrey            $mediumGrey             $lightGrey
 	}
 
 }
 
-exec_always feh --bg-scale /home/route/Pictures/wallpaper.jpg
+exec_always feh --bg-scale /home/lmroute/Pictures/wallpaper.jpg
 exec_always xset s 0 0 &
 exec_always xset -dpms; xset s off
 exec --no-startup-id compton &
