@@ -1,3 +1,5 @@
+# Lock screen
+bindsym $mod+shift+x exec --no-startup-id blurlock
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -91,7 +93,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -160,8 +161,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+shift+x exec i3lock
-
 bindsym $mod+shift+u exec /home/lmroute/Documents/unityFiles/UnityHub.AppImage
 
 bindsym $mod+b exec firefox
@@ -198,7 +197,7 @@ bar {
 
 }
 
-exec_always feh --bg-scale /home/lmroute/Pictures/wallpaper.jpg
+exec_always feh --bg-scale /home/lillian_meer/Pictures/wallpaper.jpg
 exec_always xset s 0 0 &
 exec_always xset -dpms; xset s off
 exec --no-startup-id compton &
